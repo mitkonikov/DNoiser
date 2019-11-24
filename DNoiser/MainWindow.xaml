@@ -1,0 +1,22 @@
+﻿<Window x:Class="DNoiser.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="OptiX DNoiser - NVidia" Height="362" Width="533.667" 
+        ResizeMode="NoResize" Background="#FF1B1B1B" Loaded="Window_Loaded_1" Icon="DNoiser.ico">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="34*"/>
+            <RowDefinition Height="287*"/>
+        </Grid.RowDefinitions>
+        <Label x:Name="library_label" Style="{StaticResource HoverEnabled}" Content="Library" HorizontalAlignment="Left" Margin="10,7,0,0" 
+               Foreground="White" Width="58" VerticalAlignment="Bottom"
+               FontFamily="Roboto" FontWeight="Bold" RenderTransformOrigin="0.475,0.778" MouseDown="library_label_MouseDown" HorizontalContentAlignment="Center" />
+        <Label x:Name="denoise_label" Style="{StaticResource HoverEnabled}" Content="Denoise" HorizontalAlignment="Left" Margin="73,7,0,0" 
+               Foreground="White" Width="58" VerticalAlignment="Bottom"
+               FontFamily="Roboto" FontWeight="Regular" RenderTransformOrigin="0.475,0.778" MouseDown="denoise_label_MouseDown" HorizontalContentAlignment="Center"/>
+        <Frame x:Name="main_frame" HorizontalAlignment="Left" Height="255" Grid.Row="1" VerticalAlignment="Top" Width="519" NavigationUIVisibility="Hidden"/>
+        <Label x:Name="creators_label" Content="Powered by NVidia - Mitko Nikov - Declan Russell" HorizontalAlignment="Left" Margin="242,260,0,0" Grid.Row="1" VerticalAlignment="Top" Foreground="White" FontFamily="Roboto Light"/>
+        <Label x:Name="creators_label_Copy" Content="For personal use only" HorizontalAlignment="Left" Margin="17,260,0,0" Grid.Row="1" VerticalAlignment="Top" Foreground="White" FontFamily="Roboto Light"/>
+
+    </Grid>
+</Window>
